@@ -32,7 +32,7 @@ def main(page: ft.Page):
         dlg_modal.open = True
         page.update()
     dlg = ft.AlertDialog(
-        title=ft.Text("Diga sim logo")
+        title=ft.Text("Fala sim logo")
     )
     def open_dlg(e):
         page.dialog = dlg
@@ -41,7 +41,7 @@ def main(page: ft.Page):
     dlg_modal = ft.AlertDialog(
         modal=True,
         title=ft.Text("Diga sim"),
-        content=ft.Text("Aceitas ir em um date comigo? 🌹"),
+        content=ft.Text("Aceitas passar muitos meses e anos comigo? 🌹"),
         actions=[
             ft.TextButton("Sim", on_click=close_dlg),
             ft.TextButton("Não", on_click=open_dlg),
